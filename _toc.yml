@@ -24,4 +24,4 @@ chapters:
     sections:
       - file: chapters/PostgresQL_PgAdmin/sections/postgresql_installation
       - file: chapters/PostgresQL_PgAdmin/sections/postgresql_research_notes
-
+  - file: chapters/Contribute.md
