@@ -1,0 +1,27 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+options:
+  numbered: True
+chapters:
+  - file: chapters/Operating_System/Operating_System
+    sections:
+      - file: chapters/Operating_System/sections/Windows
+      - file: chapters/Operating_System/sections/Linux
+      - file: chapters/Operating_System/sections/MacOs
+  - file: chapters/Docker/Docker
+    sections:
+      - file: chapters/Docker/sections/docker_installation
+      - file: chapters/Docker/sections/docker_research_notes
+  - file: chapters/Apache_Airflow/Apache_Airflow
+    sections:
+      - file: chapters/Apache_Airflow/sections/airflow_installation
+      - file: chapters/Apache_Airflow/sections/airflow_installation_Windows
+      - file: chapters/Apache_Airflow/sections/airflow_research_notes
+  - file: chapters/PostgresQL_PgAdmin/PostgresQL_PgAdmin
+    sections:
+      - file: chapters/PostgresQL_PgAdmin/sections/postgresql_installation
+      - file: chapters/PostgresQL_PgAdmin/sections/postgresql_research_notes
+
