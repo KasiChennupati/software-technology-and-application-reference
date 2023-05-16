@@ -17,8 +17,8 @@ chapters:
       - file: chapters/Docker/sections/docker_research_notes
   - file: chapters/Apache_Airflow/Apache_Airflow
     sections:
+      - file: chapters/Apache_Airflow/sections/airflow_installation_official_page
       - file: chapters/Apache_Airflow/sections/airflow_installation
-      - file: chapters/Apache_Airflow/sections/airflow_installation_Windows
       - file: chapters/Apache_Airflow/sections/airflow_research_notes
   - file: chapters/PostgresQL_PgAdmin/PostgresQL_PgAdmin
     sections:

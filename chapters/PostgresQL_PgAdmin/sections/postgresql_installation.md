@@ -69,7 +69,7 @@ services:
         - postgres_dbserver
 
 ```
-
-
 ````
 `````
+
+In the docker compose file the environment variables we set are for the postgres superuser

@@ -5,6 +5,7 @@ title: Application Research Notes
 author: Kasi Chennupati
 logo: logo.png
 
+only_build_toc_files: true
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:

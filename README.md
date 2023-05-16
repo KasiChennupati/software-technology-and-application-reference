@@ -10,6 +10,7 @@ To replicate the development environment or the editing environment can be set u
 For this setup we gone with python 3.8.16 since it's the last python version that's reached Security fix maintenance status in python project 3.10 and 3.11 are in bugfix maintenance status.
 
 ### Note
+
 --> ***The entire base will be shortly migrated to python 3.9.16 once offline code templates are tested.***
 
 Pip version is always chosen to be updated to latest available (23.1.2)

@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>3.1. Apache Airflow Installation &#8212; Application Research Notes</title>
+    <title>3.2. Apache Airflow Installation &#8212; Application Research Notes</title>
   
   
   
@@ -62,8 +62,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="canonical" href="https://www.kasichennupati.com/Application-Research-Notes/chapters/Apache_Airflow/sections/airflow_installation.html" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="3.2. airflow_installation_Windows" href="airflow_installation_Windows.html" />
-    <link rel="prev" title="3. Apache Airflow" href="../Apache_Airflow.html" />
+    <link rel="next" title="3.3. Apache Airflow Research Notes" href="airflow_research_notes.html" />
+    <link rel="prev" title="3.1. Apache Airflow Official Installation Page" href="airflow_installation_official_page.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en">
   </head>
@@ -164,6 +164,13 @@ const thebe_selector_output = ".output, .cell_output"
                       </a>
                     </li>
                 
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../Contribute.html">
+                        Contribute
+                      </a>
+                    </li>
+                
     </ul>
 </nav>
       </div>
@@ -261,6 +268,13 @@ const thebe_selector_output = ".output, .cell_output"
                       </a>
                     </li>
                 
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../Contribute.html">
+                        Contribute
+                      </a>
+                    </li>
+                
     </ul>
 </nav>
       </div>
@@ -342,8 +356,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../Apache_Airflow.html">3. Apache Airflow</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.1. Apache Airflow Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="airflow_installation_Windows.html">3.2. airflow_installation_Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="airflow_installation_official_page.html">3.1. Apache Airflow Official Installation Page</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">3.2. Apache Airflow Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="airflow_research_notes.html">3.3. Apache Airflow Research Notes</a></li>
 </ul>
 </li>
@@ -352,6 +366,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../../PostgresQL_PgAdmin/sections/postgresql_research_notes.html">4.3. PostgresQL Research Notes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../Contribute.html">5. Contribute</a></li>
 </ul>
 
     </div>
@@ -521,26 +536,24 @@ title="Print to PDF"
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#from-airflow-quick-start-page">
-   3.1.1. From Airflow Quick Start Page
+  <a class="reference internal nav-link" href="#airflow-in-docker">
+   3.2.1. Airflow in Docker
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#code-block-explanation">
-   3.1.2. Code Block Explanation
+  <a class="reference internal nav-link" href="#airflow-in-linux">
+   3.2.2. Airflow in Linux
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#how-to-know-if-it-s-linux-code-block">
-     3.1.2.1. How to know if it’s linux code block
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#line-by-line">
-     3.1.2.2. Line by Line
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#airflow-in-windows">
+   3.2.3. Airflow in Windows
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#airflow-in-macos">
+   3.2.4. Airflow in MacOS
+  </a>
  </li>
 </ul>
 
@@ -552,85 +565,31 @@ title="Print to PDF"
             <article class="bd-article" role="main">
               
   <section class="tex2jax_ignore mathjax_ignore" id="apache-airflow-installation">
-<h1><span class="section-number">3.1. </span>Apache Airflow Installation<a class="headerlink" href="#apache-airflow-installation" title="Permalink to this heading">#</a></h1>
-<p>Let’s visit and see the space we are working with
-<a href="https://airflow.apache.org/docs/apache-airflow/stable/start.html" target="_blank" rel="noopener">Official Airflow Quick Start Page</a></p>
-<p>Apache Airflow is an awesome tool created by Airbnb to solve their data engineering pipeline problems.</p>
-<p>When setup and managed properly airflow can solve all of the enterprise data engineering problems surrounding data dependencies and pipeline maintenane.</p>
-<p>Let’s see how to install the Apache Airflow in Docker Environment.</p>
-<section id="from-airflow-quick-start-page">
-<h2><span class="section-number">3.1.1. </span>From Airflow Quick Start Page<a class="headerlink" href="#from-airflow-quick-start-page" title="Permalink to this heading">#</a></h2>
-<p><a href="https://airflow.apache.org/docs/apache-airflow/stable/start.html" target="_blank" rel="noopener">Official Airflow Quick Start Page</a></p>
-<p>As of 13-May-2023 airflow requires Python3 environment and starting from Airflow version 2.3.0 all versions are tested on <strong>Python 3.7, 3.8, 3.9, 3.10</strong></p>
-<p>And only installation via <strong>pip</strong> is <strong>officially supported</strong> and recommended other tools like <strong>poetry</strong> or <strong>pip-tools</strong> are currently <strong>not supported/recommended</strong> officially.</p>
-<p>The installation is fairly easy but would need a basic knowledge on linux command line and python package installation.</p>
-<p>The use of constraints file is recommended and the following is provided to us as a code block.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Airflow needs a home. `~/airflow` is the default, but you can put it</span>
-<span class="c1"># somewhere else if you prefer (optional)</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">AIRFLOW_HOME</span><span class="o">=</span>~/airflow
-
-<span class="c1"># Install Airflow using the constraints file</span>
-<span class="nv">AIRFLOW_VERSION</span><span class="o">=</span><span class="m">2</span>.6.0
-<span class="nv">PYTHON_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>python<span class="w"> </span>--version<span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span>-f<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;.&quot;</span><span class="w"> </span>-f<span class="w"> </span><span class="m">1</span>-2<span class="k">)</span><span class="s2">&quot;</span>
-<span class="c1"># For example: 3.7</span>
-<span class="nv">CONSTRAINT_URL</span><span class="o">=</span><span class="s2">&quot;https://raw.githubusercontent.com/apache/airflow/constraints-</span><span class="si">${</span><span class="nv">AIRFLOW_VERSION</span><span class="si">}</span><span class="s2">/constraints-</span><span class="si">${</span><span class="nv">PYTHON_VERSION</span><span class="si">}</span><span class="s2">.txt&quot;</span>
-<span class="c1"># For example: https://raw.githubusercontent.com/apache/airflow/constraints-2.6.0/constraints-3.7.txt</span>
-pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;apache-airflow==</span><span class="si">${</span><span class="nv">AIRFLOW_VERSION</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>--constraint<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">CONSTRAINT_URL</span><span class="si">}</span><span class="s2">&quot;</span>
-
-<span class="c1"># The Standalone command will initialise the database, make a user,</span>
-<span class="c1"># and start all components for you.</span>
-airflow<span class="w"> </span>standalone
-
-<span class="c1"># Visit localhost:8080 in the browser and use the admin account details</span>
-<span class="c1"># shown on the terminal to login.</span>
-<span class="c1"># Enable the example_bash_operator DAG in the home page</span>
-</pre></div>
-</div>
-<p>Now looking at the above file code block a few things are clear the developers of airflow have gone out of their way to provide with commands that will automatically detect and install the software for us.</p>
-</section>
-<section id="code-block-explanation">
-<h2><span class="section-number">3.1.2. </span>Code Block Explanation<a class="headerlink" href="#code-block-explanation" title="Permalink to this heading">#</a></h2>
-<p>Now, let’s dissect the installation code block and understand what each line is trying to do.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">1</span><span class="w">   </span><span class="c1"># Airflow needs a home. `~/airflow` is the default, but you can put it</span>
-<span class="m">2</span><span class="w">   </span><span class="c1"># somewhere else if you prefer (optional)</span>
-<span class="m">3</span><span class="w">   </span><span class="nb">export</span><span class="w"> </span><span class="nv">AIRFLOW_HOME</span><span class="o">=</span>~/airflow
-<span class="m">4</span><span class="w">   </span>
-<span class="m">5</span><span class="w">   </span><span class="c1"># Install Airflow using the constraints file</span>
-<span class="m">6</span><span class="w">   </span><span class="nv">AIRFLOW_VERSION</span><span class="o">=</span><span class="m">2</span>.6.0
-<span class="m">7</span><span class="w">   </span><span class="nv">PYTHON_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>python<span class="w"> </span>--version<span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span>-f<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;.&quot;</span><span class="w"> </span>-f<span class="w"> </span><span class="m">1</span>-2<span class="k">)</span><span class="s2">&quot;</span>
-<span class="m">8</span><span class="w">   </span><span class="c1"># For example: 3.7</span>
-<span class="m">9</span><span class="w">   </span><span class="nv">CONSTRAINT_URL</span><span class="o">=</span><span class="s2">&quot;https://raw.githubusercontent.com/apache/airflow/constraints-</span><span class="si">${</span><span class="nv">AIRFLOW_VERSION</span><span class="si">}</span><span class="s2">/constraints-</span><span class="si">${</span><span class="nv">PYTHON_VERSION</span><span class="si">}</span><span class="s2">.txt&quot;</span>
-<span class="m">10</span><span class="w">  </span><span class="c1"># For example: https://raw.githubusercontent.com/apache/airflow/constraints-2.6.0/constraints-3.7.txt</span>
-<span class="m">11</span><span class="w">  </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;apache-airflow==</span><span class="si">${</span><span class="nv">AIRFLOW_VERSION</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span>--constraint<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">CONSTRAINT_URL</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="m">12</span><span class="w">  </span>
-<span class="m">13</span><span class="w">  </span><span class="c1"># The Standalone command will initialise the database, make a user,</span>
-<span class="m">14</span><span class="w">  </span><span class="c1"># and start all components for you.</span>
-<span class="m">15</span><span class="w">  </span>airflow<span class="w"> </span>standalone
-<span class="m">16</span><span class="w">  </span>
-<span class="m">17</span><span class="w">  </span><span class="c1"># Visit localhost:8080 in the browser and use the admin account details</span>
-<span class="m">18</span><span class="w">  </span><span class="c1"># shown on the terminal to login.</span>
-<span class="m">19</span><span class="w">  </span><span class="c1"># Enable the example_bash_operator DAG in the home page</span>
-</pre></div>
-</div>
-<section id="how-to-know-if-it-s-linux-code-block">
-<h3><span class="section-number">3.1.2.1. </span>How to know if it’s linux code block<a class="headerlink" href="#how-to-know-if-it-s-linux-code-block" title="Permalink to this heading">#</a></h3>
-<p>Now, the fist thing to know in the earlier section we mentioned this code block is for linux. But, how do we know these instructions are for linux environment and not for windows.</p>
+<h1><span class="section-number">3.2. </span>Apache Airflow Installation<a class="headerlink" href="#apache-airflow-installation" title="Permalink to this heading">#</a></h1>
+<p>In the previous section we saw what we have in the official page of Airflow</p>
+<p>Let’s now see How to actually set this up in different environments</p>
 <ul class="simple">
-<li><p>The <em>line(7)</em> <code class="docutils literal notranslate"><span class="pre">PYTHON_VERSION=&quot;$(python</span> <span class="pre">--version</span> <span class="pre">|</span> <span class="pre">cut</span> <span class="pre">-d</span> <span class="pre">&quot;</span> <span class="pre">&quot;</span> <span class="pre">-f</span> <span class="pre">2</span> <span class="pre">|</span> <span class="pre">cut</span> <span class="pre">-d</span> <span class="pre">&quot;.&quot;</span> <span class="pre">-f</span> <span class="pre">1-2)&quot;</span></code> these are the lines that give away the references to the linux command line since it looks a lot like bash script than powershell script.</p></li>
-<li><p>The command at <em>line(3)</em> <code class="docutils literal notranslate"> <span class="pre">export</span> <span class="pre">AIRFLOW_HOME=~/airflow</span></code> The export command is used in linux for setting the environment variables</p></li>
-<li><p>You see the <em>line(3)</em> with <code class="docutils literal notranslate"><span class="pre">/</span></code> with them as directory Linux uses forward slashes <code class="docutils literal notranslate"><span class="pre">/</span></code> as path seperator where as windows uses backward slash <code class="docutils literal notranslate"><span class="pre">\</span></code> as path seperator.</p></li>
+<li><p><a class="reference internal" href="#airflow-in-docker"><span class="std std-ref">Docker</span></a></p></li>
+<li><p><a class="reference internal" href="#airflow-in-linux"><span class="std std-ref">Linux</span></a></p></li>
+<li><p><a class="reference internal" href="#airflow-in-windows"><span class="std std-ref">Windows</span></a></p></li>
+<li><p><a class="reference internal" href="#airflow-in-macos"><span class="std std-ref">MacOS</span></a></p></li>
 </ul>
+<section id="airflow-in-docker">
+<span id="id1"></span><h2><span class="section-number">3.2.1. </span>Airflow in Docker<a class="headerlink" href="#airflow-in-docker" title="Permalink to this heading">#</a></h2>
+<p>Apache Airflow can be installed in Docker using the following Dockerfile</p>
 </section>
-<section id="line-by-line">
-<h3><span class="section-number">3.1.2.2. </span>Line by Line<a class="headerlink" href="#line-by-line" title="Permalink to this heading">#</a></h3>
-<p>In the code block the <em>lines(1-3)</em></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Airflow needs a home. `~/airflow` is the default, but you can put it</span>
-<span class="c1"># somewhere else if you prefer (optional)</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">AIRFLOW_HOME</span><span class="o">=</span>~/airflow
-</pre></div>
-</div>
-<p>we are taking about the default location of the airflow location by setting an environment variable <strong>AIRFLOW_HOME</strong>. The value for this variable is set to <code class="docutils literal notranslate"><span class="pre">~/airflow</span></code> meaning the folder airflow is going to be present in users home directory if you are using linux then this can also be understood as <code class="docutils literal notranslate"><span class="pre">/home/{username}/airflow</span></code> the part <code class="docutils literal notranslate"><span class="pre">~/</span></code> is telling the os that it’s users home directory if you install the airflow as sudo its still in users directory but if you install this as root user then this will be in <code class="docutils literal notranslate"><span class="pre">/root/airflow</span></code> installing as root is not recommended for any application in linux. if you are installing this in windows then the value for AIRFLOW_HOME would be <code class="docutils literal notranslate"><span class="pre">\Users\{username}\airflow</span></code></p>
+<section id="airflow-in-linux">
+<span id="id2"></span><h2><span class="section-number">3.2.2. </span>Airflow in Linux<a class="headerlink" href="#airflow-in-linux" title="Permalink to this heading">#</a></h2>
+<p>In Progress</p>
 </section>
+<section id="airflow-in-windows">
+<span id="id3"></span><h2><span class="section-number">3.2.3. </span>Airflow in Windows<a class="headerlink" href="#airflow-in-windows" title="Permalink to this heading">#</a></h2>
+<p>In Progress</p>
+</section>
+<section id="airflow-in-macos">
+<span id="id4"></span><h2><span class="section-number">3.2.4. </span>Airflow in MacOS<a class="headerlink" href="#airflow-in-macos" title="Permalink to this heading">#</a></h2>
+<p>In Progress</p>
+<p>Sorry! need help with MacOS setup.But, docker is suggested for Mac Users in general for softwares that support docker.</p>
 </section>
 </section>
 
@@ -662,17 +621,17 @@ airflow<span class="w"> </span>standalone
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="../Apache_Airflow.html" title="previous page">
+  <a class='left-prev' id="prev-link" href="airflow_installation_official_page.html" title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title"><span class="section-number">3. </span>Apache Airflow</p>
+          <p class="prev-next-title"><span class="section-number">3.1. </span>Apache Airflow Official Installation Page</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="airflow_installation_Windows.html" title="next page">
+  <a class='right-next' id="next-link" href="airflow_research_notes.html" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title"><span class="section-number">3.2. </span>airflow_installation_Windows</p>
+      <p class="prev-next-title"><span class="section-number">3.3. </span>Apache Airflow Research Notes</p>
   </div>
   <i class="fa-solid fa-angle-right"></i>
   </a>
@@ -693,26 +652,24 @@ airflow<span class="w"> </span>standalone
 <nav id="bd-toc-nav" class="page-toc">
     <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#from-airflow-quick-start-page">
-   3.1.1. From Airflow Quick Start Page
+  <a class="reference internal nav-link" href="#airflow-in-docker">
+   3.2.1. Airflow in Docker
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#code-block-explanation">
-   3.1.2. Code Block Explanation
+  <a class="reference internal nav-link" href="#airflow-in-linux">
+   3.2.2. Airflow in Linux
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#how-to-know-if-it-s-linux-code-block">
-     3.1.2.1. How to know if it’s linux code block
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#line-by-line">
-     3.1.2.2. Line by Line
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#airflow-in-windows">
+   3.2.3. Airflow in Windows
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#airflow-in-macos">
+   3.2.4. Airflow in MacOS
+  </a>
  </li>
 </ul>
 
