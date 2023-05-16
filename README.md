@@ -1,5 +1,7 @@
 # Application Research Notes
 
+[![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://www.kasichennupati.com/Application-Research-Notes/)
+
 The entire content of the Application research is built with Jupyter book and other python based documentation, rederers and visualisers.
 
 ## Setup Environment
