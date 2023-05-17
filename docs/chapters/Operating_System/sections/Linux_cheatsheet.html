@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>1.1. Windows &#8212; Application Research Notes</title>
+    <title>1.3. Linux Cheatsheet &#8212; Application Research Notes</title>
   
   
   
@@ -58,12 +58,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/Operating_System/sections/Windows';</script>
-    <link rel="canonical" href="https://www.kasichennupati.com/Application-Research-Notes/chapters/Operating_System/sections/Windows.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/Operating_System/sections/Linux_cheatsheet';</script>
+    <link rel="canonical" href="https://www.kasichennupati.com/Application-Research-Notes/chapters/Operating_System/sections/Linux_cheatsheet.html" />
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="1.2. Linux" href="Linux.html" />
-    <link rel="prev" title="1. Operating System Setup" href="../Operating_System.html" />
+    <link rel="next" title="1.4. MacOS" href="MacOs.html" />
+    <link rel="prev" title="1.2. Linux" href="Linux.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="docsearch:language" content="en">
   </head>
@@ -229,6 +229,10 @@ const thebe_selector_output = ".output, .cell_output"
   
 
   
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+  </label>
+  
 
 </div>
   </nav>
@@ -371,9 +375,9 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../Operating_System.html">1. Operating System Setup</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.1. Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Windows.html">1.1. Windows</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Linux.html">1.2. Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Linux_cheatsheet.html">1.3. Linux Cheatsheet</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">1.3. Linux Cheatsheet</a></li>
 <li class="toctree-l2"><a class="reference internal" href="MacOs.html">1.4. MacOS</a></li>
 </ul>
 </li>
@@ -474,7 +478,7 @@ title="Source repository"
 </a>
 </a>
       
-      <li><a href="https://github.com/KasiChennupati/Application-Research-Notes/issues/new?title=Issue%20on%20page%20%2Fchapters/Operating_System/sections/Windows.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/KasiChennupati/Application-Research-Notes/issues/new?title=Issue%20on%20page%20%2Fchapters/Operating_System/sections/Linux_cheatsheet.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
@@ -489,7 +493,7 @@ title="Open an issue"
 </a>
 </a>
       
-      <li><a href="https://github.com/KasiChennupati/Application-Research-Notes/edit/master//chapters/Operating_System/sections/Windows.md" target="_blank"
+      <li><a href="https://github.com/KasiChennupati/Application-Research-Notes/edit/master//chapters/Operating_System/sections/Linux_cheatsheet.md" target="_blank"
    class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
@@ -514,7 +518,7 @@ title="Edit this page"
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
-      <li><a href="../../../_sources/chapters/Operating_System/sections/Windows.md" target="_blank"
+      <li><a href="../../../_sources/chapters/Operating_System/sections/Linux_cheatsheet.md" target="_blank"
    class="btn btn-sm dropdown-item"
    data-toggle="tooltip"
 data-placement="left"
@@ -547,7 +551,9 @@ title="Print to PDF"
       
   </ul>
 </div>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary" data-toggle="tooltip" data-placement="left" title="Toggle secondary sidebar">
+            <span class="fa-solid fa-list"></span>
+        </label>
     </div>
 </div>
             </div>
@@ -555,20 +561,247 @@ title="Print to PDF"
             
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Windows</h1>
+    <h1>Linux Cheatsheet</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#file-system">
+   1.3.1. File System
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#navigation">
+     1.3.1.1. Navigation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manage">
+     1.3.1.2. Manage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#search">
+     1.3.1.3. Search
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hard-drive-and-storage-commands">
+     1.3.1.4. Hard Drive and Storage Commands
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compression-commands">
+     1.3.1.5. Compression Commands
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#networking-commands">
+     1.3.1.6. Networking Commands
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
 
             <article class="bd-article" role="main">
               
-  <section class="tex2jax_ignore mathjax_ignore" id="windows">
-<h1><span class="section-number">1.1. </span>Windows<a class="headerlink" href="#windows" title="Permalink to this heading">#</a></h1>
-<p>Let’s look into how to set up windows os 10/11</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="linux-cheatsheet">
+<h1><span class="section-number">1.3. </span>Linux Cheatsheet<a class="headerlink" href="#linux-cheatsheet" title="Permalink to this heading">#</a></h1>
+<section id="file-system">
+<h2><span class="section-number">1.3.1. </span>File System<a class="headerlink" href="#file-system" title="Permalink to this heading">#</a></h2>
+<section id="navigation">
+<h3><span class="section-number">1.3.1.1. </span>Navigation<a class="headerlink" href="#navigation" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ls</p></td>
+<td><p>List all the files in a directory</p></td>
+</tr>
+<tr class="row-odd"><td><p>ls -l</p></td>
+<td><p>List all files and their details (owner, mtime, size, etc)</p></td>
+</tr>
+<tr class="row-even"><td><p>ls -a</p></td>
+<td><p>List all the files in a directory (including hidden files)</p></td>
+</tr>
+<tr class="row-odd"><td><p>pwd</p></td>
+<td><p>Show the present working directory</p></td>
+</tr>
+<tr class="row-even"><td><p>cd</p></td>
+<td><p>Change directory to some other location</p></td>
+</tr>
+<tr class="row-odd"><td><p>file</p></td>
+<td><p>View the type of any file</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="manage">
+<h3><span class="section-number">1.3.1.2. </span>Manage<a class="headerlink" href="#manage" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>mkdir</p></td>
+<td><p>Create a new directory</p></td>
+</tr>
+<tr class="row-odd"><td><p>touch</p></td>
+<td><p>Create a new, empty file, or update the modified time of an existing one</p></td>
+</tr>
+<tr class="row-even"><td><p>cat &gt; file</p></td>
+<td><p>Create a new file with the text you type after</p></td>
+</tr>
+<tr class="row-odd"><td><p>cat file</p></td>
+<td><p>View the contents of a file</p></td>
+</tr>
+<tr class="row-even"><td><p>grep</p></td>
+<td><p>View the contents of a file that match a pattern</p></td>
+</tr>
+<tr class="row-odd"><td><p>nano file</p></td>
+<td><p>Open a file (or create new one) in nano text editor</p></td>
+</tr>
+<tr class="row-even"><td><p>vim file</p></td>
+<td><p>Open a file (or create new one) in vim text editor</p></td>
+</tr>
+<tr class="row-odd"><td><p>rm or rmdir</p></td>
+<td><p>Remove a file or empty directory</p></td>
+</tr>
+<tr class="row-even"><td><p>rm -r</p></td>
+<td><p>Remove a directory that isn’t empty</p></td>
+</tr>
+<tr class="row-odd"><td><p>mv</p></td>
+<td><p>Move or rename a file or directory</p></td>
+</tr>
+<tr class="row-even"><td><p>cp</p></td>
+<td><p>Copy a file or directory</p></td>
+</tr>
+<tr class="row-odd"><td><p>rsync</p></td>
+<td><p>Synchronize the changes of one directory to another</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="search">
+<h3><span class="section-number">1.3.1.3. </span>Search<a class="headerlink" href="#search" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>locate</p></td>
+<td><p>Quickly find a file or directory that has been cached</p></td>
+</tr>
+<tr class="row-odd"><td><p>find</p></td>
+<td><p>Seach for a file or directory based on name and other parameters</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="hard-drive-and-storage-commands">
+<h3><span class="section-number">1.3.1.4. </span>Hard Drive and Storage Commands<a class="headerlink" href="#hard-drive-and-storage-commands" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>df or df -h</p></td>
+<td><p>See the current storage usage of mounted partitions</p></td>
+</tr>
+<tr class="row-odd"><td><p>sudo fdisk -l</p></td>
+<td><p>See information for all attached storage devices</p></td>
+</tr>
+<tr class="row-even"><td><p>du</p></td>
+<td><p>See disk usage of a directory’s contents</p></td>
+</tr>
+<tr class="row-odd"><td><p>tree</p></td>
+<td><p>View the directory structure for a path</p></td>
+</tr>
+<tr class="row-even"><td><p>mount and umount</p></td>
+<td><p>Mount and unmount a storage device or ISO file</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="compression-commands">
+<h3><span class="section-number">1.3.1.5. </span>Compression Commands<a class="headerlink" href="#compression-commands" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>tar cf my_dir.tar my_dir</p></td>
+<td><p>Create an uncompressed tar archive</p></td>
+</tr>
+<tr class="row-odd"><td><p>tar cfz my_dir.tar my_dir</p></td>
+<td><p>Create a tar archive with gzip compression</p></td>
+</tr>
+<tr class="row-even"><td><p>gzip file</p></td>
+<td><p>Compress a file with gzip compression</p></td>
+</tr>
+<tr class="row-odd"><td><p>tar xf file</p></td>
+<td><p>Extract the contents of any type of tar archive</p></td>
+</tr>
+<tr class="row-even"><td><p>gunzip file.gz</p></td>
+<td><p>Decompress a file that has gzip compression</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="networking-commands">
+<h3><span class="section-number">1.3.1.6. </span>Networking Commands<a class="headerlink" href="#networking-commands" title="Permalink to this heading">#</a></h3>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ip a</p></td>
+<td><p>Show IP address and other information for all active interfaces</p></td>
+</tr>
+<tr class="row-odd"><td><p>ip r</p></td>
+<td><p>Show IP address of default gateway</p></td>
+</tr>
+<tr class="row-even"><td><p>cat /etc/resolv.conf</p></td>
+<td><p>See what DNS servers your system is configured to use</p></td>
+</tr>
+<tr class="row-odd"><td><p>ping</p></td>
+<td><p>Send a ping request to a network device</p></td>
+</tr>
+<tr class="row-even"><td><p>traceroute</p></td>
+<td><p>Trace the network path taken to a device</p></td>
+</tr>
+<tr class="row-odd"><td><p>ssh</p></td>
+<td><p>Login to a remote device with SSH</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -599,17 +832,17 @@ title="Print to PDF"
             <footer class="bd-footer-article">
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="../Operating_System.html" title="previous page">
+  <a class='left-prev' id="prev-link" href="Linux.html" title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title"><span class="section-number">1. </span>Operating System Setup</p>
+          <p class="prev-next-title"><span class="section-number">1.2. </span>Linux</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="Linux.html" title="next page">
+  <a class='right-next' id="next-link" href="MacOs.html" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title"><span class="section-number">1.2. </span>Linux</p>
+      <p class="prev-next-title"><span class="section-number">1.4. </span>MacOS</p>
   </div>
   <i class="fa-solid fa-angle-right"></i>
   </a>
@@ -619,6 +852,59 @@ title="Print to PDF"
           </div>
           
           
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#file-system">
+   1.3.1. File System
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#navigation">
+     1.3.1.1. Navigation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manage">
+     1.3.1.2. Manage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#search">
+     1.3.1.3. Search
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hard-drive-and-storage-commands">
+     1.3.1.4. Hard Drive and Storage Commands
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compression-commands">
+     1.3.1.5. Compression Commands
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#networking-commands">
+     1.3.1.6. Networking Commands
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+            </div>
           
           
         </div>

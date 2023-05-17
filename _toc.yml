@@ -10,6 +10,7 @@ chapters:
     sections:
       - file: chapters/Operating_System/sections/Windows
       - file: chapters/Operating_System/sections/Linux
+      - file: chapters/Operating_System/sections/Linux_cheatsheet
       - file: chapters/Operating_System/sections/MacOs
   - file: chapters/Docker/Docker
     sections:
@@ -24,4 +25,8 @@ chapters:
     sections:
       - file: chapters/PostgresQL_PgAdmin/sections/postgresql_installation
       - file: chapters/PostgresQL_PgAdmin/sections/postgresql_research_notes
+  - file: chapters/MLFlow/mlflow
+    sections:
+      - file: chapters/MLFlow/sections/mlflow_installation
+      - file: chapters/MLFlow/sections/mlflow_research_notes
   - file: chapters/Contribute.md
