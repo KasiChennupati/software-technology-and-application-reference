@@ -1,4 +1,5 @@
 # Apache Airflow Installation
+(airflow_main_page_chapter)=
 
 In the previous section we saw what we have in the official page of Airflow
 

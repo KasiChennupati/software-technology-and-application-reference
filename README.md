@@ -21,6 +21,7 @@ Pip version is always chosen to be updated to latest available (23.1.2)
 conda env create -f environment.yml
 activate application_research_notes
 
+jupyter-book build .
 ```
 
 ## Contribute

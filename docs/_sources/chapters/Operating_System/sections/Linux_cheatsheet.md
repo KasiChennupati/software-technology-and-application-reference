@@ -67,4 +67,3 @@
 | ping                 | Send a ping request to a network device                         |
 | traceroute           | Trace the network path taken to a device                        |
 | ssh                  | Login to a remote device with SSH                               |
-

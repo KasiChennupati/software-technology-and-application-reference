@@ -12,19 +12,29 @@ chapters:
       - file: chapters/Operating_System/sections/Linux
       - file: chapters/Operating_System/sections/Linux_cheatsheet
       - file: chapters/Operating_System/sections/MacOs
+  
   - file: chapters/Docker/Docker
     sections:
       - file: chapters/Docker/sections/docker_installation
       - file: chapters/Docker/sections/docker_research_notes
+  
   - file: chapters/Apache_Airflow/Apache_Airflow
     sections:
       - file: chapters/Apache_Airflow/sections/airflow_installation_official_page
       - file: chapters/Apache_Airflow/sections/airflow_installation
       - file: chapters/Apache_Airflow/sections/airflow_research_notes
+  
+  - file: chapters/Apache_Spark/Apache_Spark.md
+    sections:
+      - file: chapters/Apache_Spark/sections/apache_spark_installation
+      - file: chapters/Apache_Spark/sections/apache_spark_mllib
+      - file: chapters/Apache_Spark/sections/apache_spark_graphx
+  
   - file: chapters/PostgresQL_PgAdmin/PostgresQL_PgAdmin
     sections:
       - file: chapters/PostgresQL_PgAdmin/sections/postgresql_installation
       - file: chapters/PostgresQL_PgAdmin/sections/postgresql_research_notes
+  
   - file: chapters/MLFlow/mlflow
     sections:
       - file: chapters/MLFlow/sections/mlflow_installation
