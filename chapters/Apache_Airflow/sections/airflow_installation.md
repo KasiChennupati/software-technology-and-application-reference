@@ -9,6 +9,7 @@ Let's now see How to actually set this up in different environments
 - [Linux](airflow-in-linux)
 - [Windows](airflow-in-windows)
 - [MacOS](airflow-in-macos)
+- [Anaconda](airflow-in-anaconda)
 
 (airflow-in-docker)=
 ## Airflow in Docker
@@ -31,3 +32,8 @@ In Progress
 In Progress
 
 Sorry! need help with MacOS setup.But, docker is suggested for Mac Users in general for softwares that support docker.
+
+(airflow-in-anaconda)=
+## Airflow in Anaconda
+
+Airflow can be installed in anaconda using the conda virtual environments
